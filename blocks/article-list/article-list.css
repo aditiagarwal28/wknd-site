@@ -25,3 +25,7 @@
 .article-list .article-list-card-body {
   margin: 16px;
 }
+
+.article-list .article-list-card-body p:last-child {
+  margin-top: 16px;
+}

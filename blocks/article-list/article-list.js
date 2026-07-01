@@ -26,10 +26,24 @@ function buildCard(entry) {
   }
   const bodyDiv = document.createElement('div');
   bodyDiv.className = 'article-list-card-body';
-  bodyDiv.innerHTML = `
-    <h3><a href="${entry.path}">${entry.title || entry.path}</a></h3>
-    <p>${entry.description || ''}</p>
-  `;
+
+  const title = document.createElement('h3');
+  const titleLink = document.createElement('a');
+  titleLink.href = entry.path;
+  titleLink.textContent = entry.title || entry.path;
+  title.append(titleLink);
+
+  const description = document.createElement('p');
+  description.textContent = entry.description || '';
+
+  const cta = document.createElement('p');
+  const ctaLink = document.createElement('a');
+  ctaLink.href = entry.path;
+  ctaLink.className = 'button';
+  ctaLink.textContent = 'Full Article';
+  cta.append(ctaLink);
+
+  bodyDiv.append(title, description, cta);
   li.append(imageDiv, bodyDiv);
   return li;
 }
