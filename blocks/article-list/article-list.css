@@ -29,3 +29,18 @@
 .article-list .article-list-card-body p:last-child {
   margin-top: 16px;
 }
+
+.article-list .article-list-card-body .button {
+  background-color: #ffd200;
+  color: #000;
+  border: 1px solid #ffd200;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.article-list .article-list-card-body .button:hover,
+.article-list .article-list-card-body .button:focus-visible {
+  background-color: #000;
+  color: #ffd200;
+  border-color: #000;
+}
