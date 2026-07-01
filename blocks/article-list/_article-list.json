@@ -49,6 +49,13 @@
               "value": "true"
             }
           ]
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "allArticlesLink",
+          "label": "\"All Articles\" link",
+          "description": "If set, cards won't show a per-card CTA; instead a single \"All Articles\" button appears below the grid, linking to this path"
         }
       ]
     }

@@ -30,7 +30,8 @@
   margin-top: 16px;
 }
 
-.article-list .article-list-card-body .button {
+.article-list .article-list-card-body .button,
+.article-list .article-list-all-link .button {
   background-color: #ffd200;
   color: #000;
   border: 1px solid #ffd200;
@@ -39,8 +40,15 @@
 }
 
 .article-list .article-list-card-body .button:hover,
-.article-list .article-list-card-body .button:focus-visible {
+.article-list .article-list-card-body .button:focus-visible,
+.article-list .article-list-all-link .button:hover,
+.article-list .article-list-all-link .button:focus-visible {
   background-color: #000;
   color: #ffd200;
   border-color: #000;
+}
+
+.article-list .article-list-all-link {
+  margin-top: 24px;
+  text-align: center;
 }
