@@ -8,6 +8,8 @@
 }
 
 .article-list ul > li {
+  display: flex;
+  flex-direction: column;
   border: 1px solid #dadada;
   background-color: var(--background-color);
 }
@@ -23,11 +25,18 @@
 }
 
 .article-list .article-list-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   margin: 16px;
 }
 
 .article-list .article-list-card-body p:last-child {
   margin-top: 16px;
+}
+
+.article-list .article-list-card-body p:last-child:has(.button) {
+  margin-top: auto;
 }
 
 .article-list .article-list-card-body .button,
