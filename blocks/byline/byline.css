@@ -1,0 +1,25 @@
+.byline {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.byline .byline-image img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.byline .byline-name {
+  font-weight: 700;
+}
+
+.byline .byline-occupations p {
+  display: inline;
+  margin: 0;
+}
+
+.byline .byline-occupations p:not(:last-child)::after {
+  content: ', ';
+}

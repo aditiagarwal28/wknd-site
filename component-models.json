@@ -142,6 +142,72 @@
     ]
   },
   {
+    "id": "article-list",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "path",
+        "label": "Path prefix",
+        "description": "Only list pages whose path starts with this value, e.g. /us/en/magazine"
+      },
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "limit",
+        "label": "Limit",
+        "description": "Maximum number of articles to show (leave blank for all)"
+      },
+      {
+        "component": "select",
+        "name": "excludeCurrent",
+        "label": "Exclude current page",
+        "value": "false",
+        "options": [
+          {
+            "name": "No",
+            "value": "false"
+          },
+          {
+            "name": "Yes",
+            "value": "true"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "byline",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "name",
+        "label": "Name"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "occupations",
+        "label": "Occupations",
+        "multi": true
+      }
+    ]
+  },
+  {
     "id": "card",
     "fields": [
       {

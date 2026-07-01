@@ -1,0 +1,11 @@
+.sharing ul {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.sharing a {
+  text-decoration: none;
+}
