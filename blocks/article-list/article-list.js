@@ -40,7 +40,7 @@ export default async function decorate(block) {
 
   const currentPath = window.location.pathname;
   let entries = await fetchIndex();
-  if (path) entries = entries.filter((e) => e.path.startsWith(path));
+  if (path) entries = entries.filter((e) => e.path.startsWith(`${path}/`));
   if (excludeCurrent) entries = entries.filter((e) => e.path !== currentPath);
   entries.sort((a, b) => (b.lastModified || 0) - (a.lastModified || 0));
   if (limit) entries = entries.slice(0, limit);
