@@ -42,6 +42,13 @@
     align-items: stretch;
   }
 
+  .teaser .teaser-image,
+  .teaser .teaser-image > div,
+  .teaser .teaser-image picture {
+    display: block;
+    height: 100%;
+  }
+
   .teaser .teaser-image img {
     height: 100%;
     aspect-ratio: unset;
