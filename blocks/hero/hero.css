@@ -13,6 +13,9 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.hero:has(picture) h1 {
   color: var(--background-color);
 }
 
