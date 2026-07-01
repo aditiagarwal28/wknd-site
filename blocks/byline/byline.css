@@ -15,11 +15,16 @@
   font-weight: 700;
 }
 
-.byline .byline-occupations p {
-  display: inline;
+.byline .byline-occupations ul {
+  list-style: none;
   margin: 0;
+  padding: 0;
 }
 
-.byline .byline-occupations p:not(:last-child)::after {
+.byline .byline-occupations li {
+  display: inline;
+}
+
+.byline .byline-occupations li:not(:last-child)::after {
   content: ', ';
 }
