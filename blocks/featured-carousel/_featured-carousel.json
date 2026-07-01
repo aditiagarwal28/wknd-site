@@ -1,0 +1,67 @@
+{
+  "definitions": [
+    {
+      "title": "Featured Carousel",
+      "id": "featured-carousel",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Featured Carousel",
+              "filter": "featured-carousel"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Featured Carousel Slide",
+      "id": "featured-carousel-item",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Featured Carousel Slide",
+              "model": "featured-carousel-item"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "featured-carousel-item",
+      "fields": [
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "image",
+          "label": "Image",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "imageAlt",
+          "label": "Alt"
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "text",
+          "label": "Text",
+          "description": "Include the CTA as a bold-wrapped link, e.g. <strong><a href=\"/magazine/article\">Full Article</a></strong>, to have it render as a button"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "featured-carousel",
+      "components": ["featured-carousel-item"]
+    }
+  ]
+}

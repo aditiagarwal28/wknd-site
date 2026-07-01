@@ -54,7 +54,8 @@
         "article-list",
         "byline",
         "sharing",
-        "teaser"
+        "teaser",
+        "featured-carousel"
       ]
     }
   ]

@@ -19,7 +19,8 @@
       "article-list",
       "byline",
       "sharing",
-      "teaser"
+      "teaser",
+      "featured-carousel"
     ]
   },
   {
@@ -41,6 +42,12 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "featured-carousel",
+    "components": [
+      "featured-carousel-item"
     ]
   }
 ]
