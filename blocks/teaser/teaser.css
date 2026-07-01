@@ -1,0 +1,56 @@
+.teaser {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.teaser .teaser-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.teaser .teaser-text {
+  background-color: #f2f2f2;
+  padding: 32px;
+}
+
+.teaser .teaser-text > p:first-child {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: var(--body-font-size-s);
+}
+
+.teaser .teaser-text .button {
+  background-color: #ffd200;
+  color: #000;
+  border: 1px solid #ffd200;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.teaser .teaser-text .button:hover,
+.teaser .teaser-text .button:focus-visible {
+  background-color: #000;
+  color: #ffd200;
+  border-color: #000;
+}
+
+@media (width >= 900px) {
+  .teaser {
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+  }
+
+  .teaser .teaser-image img {
+    height: 100%;
+    aspect-ratio: unset;
+  }
+
+  .teaser .teaser-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 48px;
+  }
+}
